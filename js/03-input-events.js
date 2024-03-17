@@ -14,8 +14,8 @@ const refs = {
   btn: document.querySelector('.js-button'),
 };
 
-// refs.input.addEventListener('focus', onInputFocus);
-// refs.input.addEventListener('blur', onInputBlur);
+refs.input.addEventListener('focus', onInputFocus);
+refs.input.addEventListener('blur', onInputBlur);
 // refs.input.addEventListener('change', onInputChange);
 // refs.input.addEventListener('input', onInputChange);
 
@@ -33,7 +33,8 @@ function onInputBlur() {
 function onInputChange(event) {
   refs.nameLabel.textContent = event.currentTarget.value;
 }
-
+// todo 8
+// !              АКТИВНАЯ КНОПКА ПРИ ЧЕКЕТБОКС, КОТОРИЙ ВОЗВРАЩАЕТ БУЛЬ
 function onLicenseChange(event) {
   refs.btn.disabled = !event.currentTarget.checked;
 }
