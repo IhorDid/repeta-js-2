@@ -11,7 +11,7 @@ form.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(event) {
   event.preventDefault();
-
+  // * ссылка на елемент прослушивания, тоесть form
   const formData = new FormData(event.currentTarget);
 
   console.log(formData);
